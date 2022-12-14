@@ -22,7 +22,7 @@
 - 깊이에 따라 눈물의 크기와 바닥에 접촉 시 생기는 파장의 위치와 크기가 달라지게 설정이 되어있다는 것을 알았다.(그러나 UI 더 살릴 생각을 해서 안넣었다..)\
 
 #### 반성 부분
-![모작눈물](https://user-images.githubusercontent.com/93506849/207500089-90cecb4f-d132-4572-8ed8-e8dda870c5f3.JPG)\
+![모작눈물](https://user-images.githubusercontent.com/93506849/207500089-90cecb4f-d132-4572-8ed8-e8dda870c5f3.JPG)
 - 가장 간단하게 구현을 해버린 것이 아닌가 하였다. 그냥 눈물만 나오면 되는거 아닌가란 생각을 가지고 만든 것이 가장 큰 실수 였던 것 같다.\
 ![업데이트 실수](https://user-images.githubusercontent.com/93506849/207500303-750d8a72-89ff-436c-89e7-7dd4e5aaeead.JPG)
 - 그리고 클릭시 누른 만큼 눈물이 펑펑 나왔어야 했던 부분을 Update()로 처리를 해버렸다..(Fixed Update로 바꿔야 했는데..)
