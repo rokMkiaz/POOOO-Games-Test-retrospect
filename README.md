@@ -41,5 +41,7 @@
 ![뎁스추가](https://user-images.githubusercontent.com/93506849/207812270-2cbb40a6-e4a8-4b12-9435-076014e55ad9.JPG)
 - 눈물 나오는 부분을 FixedUpdate()로 바꿔 주었다.
 - Depth를 추가하여 위치에 따라 눈물크기도 변경 시켜주었다.
+
 ![KakaoTalk_20221215_174232085](https://user-images.githubusercontent.com/93506849/207813156-ef48dd14-0508-4691-8de8-601eba7a967e.gif)
+
 (Z에 따라 크기, 충돌 지점이 다른 것을 확인할 수 있다.)
