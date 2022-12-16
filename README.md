@@ -51,5 +51,5 @@
 
 ![level1](https://user-images.githubusercontent.com/93506849/208022467-33b5e746-dc73-4bde-bc99-dcaff629e6cd.JPG)
 -level1에 해당하는 페어리를 스크립트로 만들어 보았고 작동을 테스트 해보았다.
- ![정상작동](https://user-images.githubusercontent.com/93506849/208022545-155d44de-a6de-40b0-8972-9af8e86e9ee8.JPG)
+ < ![정상작동](https://user-images.githubusercontent.com/93506849/208022545-155d44de-a6de-40b0-8972-9af8e86e9ee8.JPG)
 
