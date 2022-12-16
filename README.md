@@ -50,7 +50,7 @@
 > ![페어리](https://user-images.githubusercontent.com/93506849/208022339-87aeac73-c4bc-41d9-beb3-2d068d477432.JPG)
 > - Strategy Pattern(전략패턴)을 적용하여 페어리를 구현해보려 한다.
 > - 구조적으로 특정위치에서 랜덤하게 배치되는 페어리를 하나씩 관리하는 것 보다 괜찮을 것으로 보이며 공통되는 장비를 착용하기에 해당 패턴을 적용하였다.
-
+> 
 > ![level1](https://user-images.githubusercontent.com/93506849/208022467-33b5e746-dc73-4bde-bc99-dcaff629e6cd.JPG)
 > ![정상작동](https://user-images.githubusercontent.com/93506849/208023776-9bba09f8-0e76-4be5-8dec-f0ac3152d910.JPG)
 > - level1에 해당하는 페어리를 스크립트로 만들어 보았고 작동을 테스트 해보았다.
