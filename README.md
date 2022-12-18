@@ -54,10 +54,13 @@
 > ![level1](https://user-images.githubusercontent.com/93506849/208022467-33b5e746-dc73-4bde-bc99-dcaff629e6cd.JPG)
 > ![정상작동](https://user-images.githubusercontent.com/93506849/208023776-9bba09f8-0e76-4be5-8dec-f0ac3152d910.JPG)
 > - level1에 해당하는 페어리를 스크립트로 만들어 보았고 작동을 테스트 해보았다.
+
 >![1번](https://user-images.githubusercontent.com/93506849/208283936-0b8d8eda-e961-47c4-8106-a478662a5621.JPG)
 > - 작동이 정상적으로 확인되었으니 모델링을 시작하기전에 이전 스트레티지 패턴에 내용들을 추가해 준다.
+
 > ![1](https://user-images.githubusercontent.com/93506849/208283968-3daa4cd3-6b21-4e6d-89d2-f63bb49ebfa8.JPG)
 > - 리스트들을 이용에 스폰지점에 다 넣어주었다. 완드,모자,날개는 모든 요정들이 공용으로 쓰기에 스포너에 달아주었다.
+
 > ![변환완료](https://user-images.githubusercontent.com/93506849/208283989-f0ae41ab-3d80-47e2-aebf-3b174d5cc3b2.JPG)
 > - 런타임시 변경 확인
 
