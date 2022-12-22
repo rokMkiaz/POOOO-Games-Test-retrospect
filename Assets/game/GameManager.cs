@@ -5,12 +5,18 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    delegate void GameManagerFunction();
+    GameManagerFunction gameManagerFunction;
+
     [SerializeField] private TextMeshProUGUI UI_myHealingPoint;
     [SerializeField] private TextMeshProUGUI UI_myHealingPower;
     [SerializeField] private TextMeshProUGUI UI_myFairyPower;
     [SerializeField] private TextMeshProUGUI UI_jewel;
 
     private UpgradeManager myUpgrade;
+
+    float time = 0.0f;
+    float delay = 1.0f;
 
     public int healingPoint { get; set; }
     void Awake()
@@ -23,12 +29,16 @@ public class GameManager : MonoBehaviour
         UI_myHealingPower.text = myUpgrade.myHealingPower.ToString();
         UI_myFairyPower.text = myUpgrade.myFairyPower.ToString();
         UI_jewel.text = myUpgrade.jewel.ToString();
+
+        gameManagerFunction = new GameManagerFunction(AddHealingPoint);
+        gameManagerFunction += new GameManagerFunction(FairyHeal);
+        gameManagerFunction += new GameManagerFunction(UIUpdate);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        AddHealingPoint();
+        gameManagerFunction();
     }
 
 
@@ -37,7 +47,15 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             healingPoint += myUpgrade.myHealingPower;
-            UIUpdate();
+        }
+    }
+    private void FairyHeal()
+    {
+        time += Time.deltaTime;
+        if(time>delay)
+        {
+            healingPoint += myUpgrade.total_FairyHealingPower;
+            time = 0.0f;
         }
     }
     
@@ -45,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         UI_myHealingPoint.text = healingPoint.ToString();
         UI_myHealingPower.text = myUpgrade.myHealingPower.ToString();
-        UI_myFairyPower.text = myUpgrade.myFairyPower.ToString();
+        UI_myFairyPower.text = myUpgrade.total_FairyHealingPower.ToString();
         UI_jewel.text = myUpgrade.jewel.ToString();
     }
 }

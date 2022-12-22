@@ -67,7 +67,7 @@ public class PowerUp_List1 : MonoBehaviour
     {
         UI_ListPower.text = "탭당 치유력 "+ gameManager.GetComponent<UpgradeManager>().myHealingPower;
         //UI_ListLevel.text = "레벨" +1 ;
-        UI_PowerUp.text = "+"+gameManager.GetComponent<UpgradeManager>().addHealingPower.ToString()+" 치유력";
+        UI_PowerUp.text = "+"+gameManager.GetComponent<UpgradeManager>().total_ClickHealingPower.ToString()+" 치유력";
         UI_PowerUpMission.text = gameManager.GetComponent<UpgradeManager>().P_MissionPoint.ToString(); ;
     }
 

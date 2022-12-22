@@ -20,12 +20,25 @@ public class Tear : MonoBehaviour
         if(Left==true)transform.eulerAngles += new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0.9f);
         if(Left==false) transform.eulerAngles += new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, -0.9f);
     }
-    private void OnCollisionEnter2D(Collision2D coll)
+
+    private void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.gameObject.tag=="Ground")
+        if (coll.tag == "Ground0" && this.transform.position.z == 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (coll.tag == "Ground1" && this.transform.position.z == 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (coll.tag == "Ground2" && this.transform.position.z == 2)
         {
             Destroy(this.gameObject);
         }
     }
+
+
 
 }

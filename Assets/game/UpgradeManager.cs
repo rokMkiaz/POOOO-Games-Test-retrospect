@@ -5,16 +5,16 @@ using UnityEngine;
 public class UpgradeManager : MonoBehaviour
 {
     public int myHealingPoint { get; private set; }
-    public int myHealingPower { get; private set; }
-    public int myFairyPower { get; private set; }
+    public int myHealingPower { get; set; }
+    public int myFairyPower { get;  set; }
     public int jewel { get; private set; }
 
 
     //PowerUpList
-    public int addHealingPower = 1;
+    public int total_ClickHealingPower = 1;
     public int P_MissionPoint = 10;
     //FairyUpList
-    public int addFairyHealingPower;
+    public int total_FairyHealingPower { get; set; }
     public int F_MissionPoint;
 
 
@@ -36,16 +36,11 @@ public class UpgradeManager : MonoBehaviour
 
     public void HealingPowerUp()
     {
-        myHealingPower += addHealingPower;
+        myHealingPower += total_ClickHealingPower;
         P_MissionPoint *= 2;
-        addHealingPower *= 2;
+        total_ClickHealingPower *= 2;
         this.GetComponent<GameManager>().UIUpdate();
     }
 
-    public void FairyPowerUp()
-    {
-        myFairyPower += addFairyHealingPower;
-        F_MissionPoint *= 2;
-        addFairyHealingPower *=2;
-    }
+
 }
