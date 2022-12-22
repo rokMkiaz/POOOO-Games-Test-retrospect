@@ -63,4 +63,7 @@
 >
 > ![변환완료](https://user-images.githubusercontent.com/93506849/208283989-f0ae41ab-3d80-47e2-aebf-3b174d5cc3b2.JPG)
 > - 런타임시 변경 확인
-
+#### 최적화
+> ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
+> - Delegate를 사용하여 함수 참조를 적용해 보았다.
+> - C# 델리게이트는 한 번 콜백이 추가 또는 제거될 때마다 해당 콜백 리스트 전체를 깊게 복사 합니다. 콜백 리스트가 많거나, 하나의 프레임당 콜백의 참조/해제 수가 많을 경우 내부 Delegate.Combine 메서드의 성능이 순간적으로 크게 나빠집니다.<-를 주의 하며 사용 한다.
