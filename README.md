@@ -63,6 +63,9 @@
 >
 > ![변환완료](https://user-images.githubusercontent.com/93506849/208283989-f0ae41ab-3d80-47e2-aebf-3b174d5cc3b2.JPG)
 > - 런타임시 변경 확인
+> ![장비추가](https://user-images.githubusercontent.com/93506849/209457208-524138fe-e47d-4aa6-b215-35bdb5c746b3.JPG)
+> ![바꿈](https://user-images.githubusercontent.com/93506849/209457218-c9f7504c-5058-42e4-8ffd-4fcbfa6c8a3d.JPG)
+> - 장비도 스트레티지 패턴을 사용하여 작성하였다.
 #### 최적화
 > ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
 > - Delegate를 사용하여 함수 참조를 적용해 보았다.
