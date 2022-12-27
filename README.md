@@ -68,6 +68,11 @@
 > 
 > ![바꿈](https://user-images.githubusercontent.com/93506849/209457218-c9f7504c-5058-42e4-8ffd-4fcbfa6c8a3d.JPG)
 > - 장비도 스트레티지 패턴을 사용하여 작성하였다.
+>
+>![invoke](https://user-images.githubusercontent.com/93506849/209608575-093c836a-0605-45d9-8736-617307a6dfb9.JPG)
+> - Invoke를 사용하여 코드 재활용을 해보았다. int, "_Hat" 부분을 바꾸면 여러 함수를 호출할 수 있을 것 같아서 만들었는데, 괜찮은 방법인지 모르겠다.
+>![0](https://user-images.githubusercontent.com/93506849/209608673-e23a4f18-2288-4cad-9ece-7832efef41a3.JPG)
+>
 #### 최적화
 > ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
 > - Delegate를 사용하여 함수 참조를 적용해 보았다.
