@@ -80,10 +80,10 @@
 >
 >![장전완료](https://user-images.githubusercontent.com/93506849/210203739-b1c9160f-90c0-4ffb-be15-c3c359a9dfaf.JPG)
 >![변경](https://user-images.githubusercontent.com/93506849/210203751-f50585a9-0385-4871-a3dd-11470e662739.JPG)
-> -  Object Pooling을 사용하였으므로 기존 코드들을 수정하였다.(주석처리) 새로 생성,삭제 하는 것 보다 메모리 소비가 적어졌고, 반응속도도 개선 되었다.
+> - Object Pooling을 사용하였으므로 기존 코드들을 수정하였다.(주석처리) 새로 생성,삭제 하는 것 보다 메모리 소비가 적어졌고, 반응속도도 개선 되었다.
 > 
 >![KakaoTalk_20230102_163151224](https://user-images.githubusercontent.com/93506849/210204203-c9956331-f119-4871-b5f5-80fda4dd6624.gif)
->이전과는 눈물 나오는 속도가 차원이 다르다...@_@;;
+> - 이전과는 눈물 나오는 속도가 차원이 다르다...@_@;;
 >
 > ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
 > - Delegate를 사용하여 함수 참조를 적용해 보았다.
