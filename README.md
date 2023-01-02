@@ -83,6 +83,7 @@
 >
 >![invoke](https://user-images.githubusercontent.com/93506849/209608575-093c836a-0605-45d9-8736-617307a6dfb9.JPG)
 > - Invoke를 사용하여 코드 재활용을 해보았다. int, "_Hat" 부분을 바꾸면 여러 함수를 호출할 수 있을 것 같아서 만들었는데, 괜찮은 방법인지 모르겠다.
+>
 >![0](https://user-images.githubusercontent.com/93506849/209608673-e23a4f18-2288-4cad-9ece-7832efef41a3.JPG)
 >
 #### 기타
