@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Cry : MonoBehaviour
 {
-    delegate void CryFunctionHandler();
-    CryFunctionHandler cryFunctionHandler;
-
     [SerializeField] private Transform tearStart;
     [SerializeField] private GameObject tear;
     [SerializeField] private float cryDistance = 2.0f;
@@ -21,18 +18,10 @@ public class Cry : MonoBehaviour
     {
         lefTeartPos = new Vector3(tearStart.position.x - cryDistance, tearStart.position.y, tearStart.position.z);
         rightTearPos = new Vector3(tearStart.position.x + cryDistance, tearStart.position.y, tearStart.position.z);
-        cryFunctionHandler = new CryFunctionHandler(TearCreat);
-
     }
    
     // Update is called once per frame
     void Update()
-    {
-        cryFunctionHandler();
-
-    }
-
-    void TearCreat()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -41,13 +30,6 @@ public class Cry : MonoBehaviour
 
             GameObject lTear = Instantiate(tear, lefTeartPos, Quaternion.Euler(0, 0, 0 - (zAngle * startAngle * 57.2958f)));
             GameObject rTear = Instantiate(tear, rightTearPos, Quaternion.Euler(0, 0, 0 + (zAngle * startAngle * 57.2958f)));
-
-            lTear.transform.position = new Vector3(lTear.transform.position.x, lTear.transform.position.y, (float)depth);
-            rTear.transform.position = new Vector3(rTear.transform.position.x, rTear.transform.position.y, (float)depth);
-
-
-            lTear.transform.localScale = new Vector3(depth == 0 ? 0.65f : depth == 1 ? 0.7f : 0.75f, depth == 0 ? 0.65f : depth == 1 ? 0.7f : 0.75f, lTear.transform.localScale.z);
-            rTear.transform.localScale = new Vector3(depth == 0 ? 0.65f : depth == 1 ? 0.7f : 0.75f, depth == 0 ? 0.65f : depth == 1 ? 0.7f : 0.75f, rTear.transform.localScale.z);
 
             lTear.GetComponent<SpriteRenderer>().sprite = lTearImage;
             rTear.GetComponent<SpriteRenderer>().sprite = RTearImage;
@@ -61,4 +43,5 @@ public class Cry : MonoBehaviour
 
         }
     }
+
 }
