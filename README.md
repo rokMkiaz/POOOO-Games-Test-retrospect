@@ -73,7 +73,15 @@
 > - Invoke를 사용하여 코드 재활용을 해보았다. int, "_Hat" 부분을 바꾸면 여러 함수를 호출할 수 있을 것 같아서 만들었는데, 괜찮은 방법인지 모르겠다.
 >![0](https://user-images.githubusercontent.com/93506849/209608673-e23a4f18-2288-4cad-9ece-7832efef41a3.JPG)
 >
-#### 최적화
+#### 기타
 > ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
 > - Delegate를 사용하여 함수 참조를 적용해 보았다.
 > - C# 델리게이트는 한 번 콜백이 추가 또는 제거될 때마다 해당 콜백 리스트 전체를 깊게 복사 합니다. 콜백 리스트가 많거나, 하나의 프레임당 콜백의 참조/해제 수가 많을 경우 내부 Delegate.Combine 메서드의 성능이 순간적으로 크게 나빠지므로, 주의하며 사용한다.
+>
+>![1](https://user-images.githubusercontent.com/93506849/210197290-174674a2-b3fd-41ba-accc-f7350fcd9c16.JPG)
+>![2](https://user-images.githubusercontent.com/93506849/210197296-28da5a99-1cb3-4e4a-b395-dc1f9ecabf56.JPG)
+>![3](https://user-images.githubusercontent.com/93506849/210197301-19f43601-9404-433c-ab24-d52d9ded45a2.JPG)
+> - Loading Scene을 추가해 보았다. 
+> - https://wergia.tistory.com/194 해당 글을 참고하여 작성해 보았다.
+
+
