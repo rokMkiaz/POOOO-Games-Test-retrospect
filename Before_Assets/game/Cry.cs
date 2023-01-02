@@ -26,7 +26,6 @@ public class Cry : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             float zAngle = Random.Range(0.1f, 0.4f);
-            int depth = Random.Range(0, 3);
 
             GameObject lTear = Instantiate(tear, lefTeartPos, Quaternion.Euler(0, 0, 0 - (zAngle * startAngle * 57.2958f)));
             GameObject rTear = Instantiate(tear, rightTearPos, Quaternion.Euler(0, 0, 0 + (zAngle * startAngle * 57.2958f)));
