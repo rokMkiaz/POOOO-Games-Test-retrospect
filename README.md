@@ -78,12 +78,12 @@
 >![object풀](https://user-images.githubusercontent.com/93506849/210203300-87efd2b5-e607-4416-8262-bb886371aeeb.JPG)
 > - Object Pooling을 적용해 보았다. GameObject를 생성,삭제 하는데는 많은 리소스를 잡아먹으므로 미리 만들어 두고 재사용 하는 방식으로 쓸데 없는 동적할당을 사용하지 않아 메모리 성능을 개선한다. 물론 너무 크게 사용하면 낭비가 되고, 적게 사용하면 제대로된 생성이 안된다.
 >
->![KakaoTalk_20230102_163151224](https://user-images.githubusercontent.com/93506849/210204203-c9956331-f119-4871-b5f5-80fda4dd6624.gif)
->이전과는 눈물 나오는 속도가 차원이 다르다...@_@;;
->
 >![장전완료](https://user-images.githubusercontent.com/93506849/210203739-b1c9160f-90c0-4ffb-be15-c3c359a9dfaf.JPG)
 >![변경](https://user-images.githubusercontent.com/93506849/210203751-f50585a9-0385-4871-a3dd-11470e662739.JPG)
 > -  Object Pooling을 사용하였으므로 기존 코드들을 수정하였다.(주석처리) 새로 생성,삭제 하는 것 보다 메모리 소비가 적어졌고, 반응속도도 개선 되었다.
+> 
+>![KakaoTalk_20230102_163151224](https://user-images.githubusercontent.com/93506849/210204203-c9956331-f119-4871-b5f5-80fda4dd6624.gif)
+>이전과는 눈물 나오는 속도가 차원이 다르다...@_@;;
 >
 > ![기존](https://user-images.githubusercontent.com/93506849/209037132-fe1e9249-a959-4875-a6f6-bddb2004c444.jpg)
 > - Delegate를 사용하여 함수 참조를 적용해 보았다.
