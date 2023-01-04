@@ -18,7 +18,7 @@ public class Player_Anim : MonoBehaviour
     private float armspeed=0.01f;
 
 
-    private void Start()
+    private void Awake()
     {
         armStartPos = arm.transform.position;
     }
@@ -64,7 +64,7 @@ public class Player_Anim : MonoBehaviour
 
     private void Sad()
     {
-        sadFace.GetComponent<SpriteRenderer>().sortingOrder = 0;
+        sadFace.GetComponent<SpriteRenderer>().sortingOrder = 1;
         sad = true;
         time = 0.0f;
     }

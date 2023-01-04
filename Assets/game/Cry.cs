@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class Cry : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Cry : MonoBehaviour
     [SerializeField] private Sprite lTearImage;
     [SerializeField] private Sprite RTearImage;
 
+    private ObjectPool objectPool;
+
     Vector3 lefTeartPos;
     Vector3 rightTearPos;
     float startAngle =3.0f;
@@ -21,6 +24,8 @@ public class Cry : MonoBehaviour
     {
         lefTeartPos = new Vector3(tearStart.position.x - cryDistance, tearStart.position.y, tearStart.position.z);
         rightTearPos = new Vector3(tearStart.position.x + cryDistance, tearStart.position.y, tearStart.position.z);
+       
+        objectPool = this.GetComponent<ObjectPool>();
         cryFunctionHandler = new CryFunctionHandler(TearCreat);
 
     }
@@ -39,8 +44,18 @@ public class Cry : MonoBehaviour
             float zAngle = Random.Range(0.1f, 0.4f);
             int depth = Random.Range(0, 3);
 
-            GameObject lTear = Instantiate(tear, lefTeartPos, Quaternion.Euler(0, 0, 0 - (zAngle * startAngle * 57.2958f)));
-            GameObject rTear = Instantiate(tear, rightTearPos, Quaternion.Euler(0, 0, 0 + (zAngle * startAngle * 57.2958f)));
+            GameObject lTear = objectPool.objectPoolList[0].Dequeue();
+            lTear.transform.position = lefTeartPos;
+            lTear.transform.rotation = Quaternion.Euler(0, 0, 0 - (zAngle * startAngle * 57.2958f));
+            lTear.GetComponent<Tear>().Left = true;
+            lTear.SetActive(true);
+
+           //GameObject rTear = Instantiate(objectPool.objectPoolList[0].Dequeue(), rightTearPos, Quaternion.Euler(0, 0, 0 + (zAngle * startAngle * 57.2958f)));
+            GameObject rTear = objectPool.objectPoolList[0].Dequeue();
+            rTear.transform.position = rightTearPos;
+            rTear.transform.rotation = Quaternion.Euler(0, 0, 0 + (zAngle * startAngle * 57.2958f));
+            rTear.GetComponent<Tear>().Left = false;
+            rTear.SetActive(true);
 
             lTear.transform.position = new Vector3(lTear.transform.position.x, lTear.transform.position.y, (float)depth);
             rTear.transform.position = new Vector3(rTear.transform.position.x, rTear.transform.position.y, (float)depth);
@@ -57,7 +72,8 @@ public class Cry : MonoBehaviour
 
             lTear.GetComponent<Rigidbody2D>().AddForce((v2L - tearStart.position) * (tearForce + zAngle), ForceMode2D.Impulse);
             rTear.GetComponent<Rigidbody2D>().AddForce((v2R - tearStart.position) * (tearForce + zAngle), ForceMode2D.Impulse);
-
+          
+          
 
         }
     }
