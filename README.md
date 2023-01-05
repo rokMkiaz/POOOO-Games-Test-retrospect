@@ -96,6 +96,6 @@
 >![2](https://user-images.githubusercontent.com/93506849/210197296-28da5a99-1cb3-4e4a-b395-dc1f9ecabf56.JPG)
 >![3](https://user-images.githubusercontent.com/93506849/210197301-19f43601-9404-433c-ab24-d52d9ded45a2.JPG)
 > - Loading Scene을 추가해 보았다. 
-> - https://wergia.tistory.com/194 해당 글을 참고하여 작성해 보았다.
+> - https://wergia.tistory.com/194 해당 글을 참고하여 작성해 보았다..
 
 
