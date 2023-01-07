@@ -29,7 +29,7 @@
 
 ![업데이트 실수](https://user-images.githubusercontent.com/93506849/207500303-750d8a72-89ff-436c-89e7-7dd4e5aaeead.JPG)
 
-- 그리고 클릭시 누른 만큼 눈물이 펑펑 나왔어야 했던 부분을 ~~ Update()로 처리를 해버렸다..(Fixed Update로 바꿔야 했는데..) ~~
+- 그리고 클릭시 누른 만큼 눈물이 펑펑 나왔어야 했던 부분을 ~~Update()로 처리를 해버렸다..(Fixed Update로 바꿔야 했는데..)~~
 - 60fps제한을 걸어두니 터치를 아무리 하여도 내 생각만큼 눈물이 나오지 않았다..[프로세스](https://github.com/rokMkiaz/GunBooster_TeamRocket_iwnam_summary/blob/main/Process.md)에 대한 나의 이해력 부족으로난 문제였다.
 
  ![gafgd](https://user-images.githubusercontent.com/93506849/207501237-771abf1a-b198-4ad9-9b79-843c2c0560be.JPG)
