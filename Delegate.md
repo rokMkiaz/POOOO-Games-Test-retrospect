@@ -18,6 +18,7 @@ C# 델리게이트는 한 번 콜백이 추가 또는 제거될 때마다 해당
 ![델리게이트 이벤트](https://user-images.githubusercontent.com/93506849/212274938-701b2506-a56f-4d30-a328-620196bd60f0.JPG)
 - 게임매니저에서 클래스를 선언해 간단하게 종료될 상황에서 Event를 발생시키는 Delegate Class를 만들어 보았다.
 - 내용으로는 종료시 실행되는 함수들과 Log를 띄우는 목적이다. 
+
 ![구독하는 클래스](https://user-images.githubusercontent.com/93506849/212274989-5ed65676-464e-40a0-bcca-4c5abf605a01.JPG)
 - 구독 클래스 역시 게임 종료시 Life의 파괴와 event 발생 조건인 Life의 Hp을 넘겨주는 것으로 사용하였다.
 
